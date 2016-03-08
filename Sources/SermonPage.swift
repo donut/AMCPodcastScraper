@@ -51,14 +51,11 @@ class SermonPage : SequenceType {
     		openDivRange!.endIndex.advancedBy(1)..<closeDivRange.startIndex
 			
 			let sermon = Sermon(html: self.html.substringWithRange(sermonRange))
-			if sermon == nil {
-				return nil
-			}
 			
 			self.lastParseIndex = closeDivRange.endIndex
-			self.sermons.append(sermon!)
+			self.sermons.append(sermon)
 
-			return sermon!
+			return sermon
 		}
 	}
 }

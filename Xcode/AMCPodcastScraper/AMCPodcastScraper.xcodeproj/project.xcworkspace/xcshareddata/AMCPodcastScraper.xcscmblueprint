@@ -8,10 +8,8 @@
     "F1BC52561A710CF215ADD0AA3A71C2520A285287" : 0,
     "D4199CF4A45E212E54A4CEE7E34326E0BC446862" : 0,
     "901D39F10963DCBC990E02C949E08901C0DDB8E3" : 0,
-    "FDC1EEAE5EDAF5D3F4A6BADD7FDD7A4BD908DED9" : 0,
     "8951CEB15DDB2D711276960E67900B8AA34FF427" : 0,
     "15033DFF73D1DAA84A806DC9B6994613D8A2EB4F" : 0,
-    "66FB12B2039D50DE5AF09A44F1172B3A2880CFB8" : 0,
     "EEB4909D83F96F5BD9469CDDE9596289619DBE1F" : 0,
     "10A2CB6C4392F0E306FF8D509BE5E88232276EA4" : 0,
     "908FC933CA96C901B9EB7FCA1AC9BEABA3C7F49F" : 0,
@@ -21,25 +19,23 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "67D93E0E-748C-4B01-8474-A280F6FEE3D3",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "269ADF55FAAC04D68303BE30B6BD693E717155DE" : "Zewo\/CHTTPParser\/",
-    "EB3A58D245911351A063DF08C170DE3415B65824" : "Zewo\/HTTPClient\/",
-    "F1BC52561A710CF215ADD0AA3A71C2520A285287" : "Zewo\/Data\/",
-    "D4199CF4A45E212E54A4CEE7E34326E0BC446862" : "Zewo\/HTTP\/",
-    "901D39F10963DCBC990E02C949E08901C0DDB8E3" : "Zewo\/InterchangeData\/",
-    "FDC1EEAE5EDAF5D3F4A6BADD7FDD7A4BD908DED9" : "Zewo\/Stream\/",
-    "8951CEB15DDB2D711276960E67900B8AA34FF427" : "Zewo\/MediaType\/",
-    "15033DFF73D1DAA84A806DC9B6994613D8A2EB4F" : "Zewo\/IP\/",
-    "66FB12B2039D50DE5AF09A44F1172B3A2880CFB8" : "Zewo\/URI\/",
-    "EEB4909D83F96F5BD9469CDDE9596289619DBE1F" : "Zewo\/CURIParser\/",
-    "10A2CB6C4392F0E306FF8D509BE5E88232276EA4" : "Zewo\/String\/",
-    "908FC933CA96C901B9EB7FCA1AC9BEABA3C7F49F" : "Zewo\/TCP\/",
-    "900D198C3FB851E8F8E01B008846A319DD357A70" : "Zewo\/Venice\/",
-    "704B817219E4CBC31AA92368EF54A4E2835A8C3D" : "Zewo\/System\/",
-    "1D5E3FB3EB19F2DAF5FDEE97CBD5C55259A1CEC1" : "Zewo\/CLibvenice\/"
+    "269ADF55FAAC04D68303BE30B6BD693E717155DE" : "AMCPodcastScraper\/Packages\/CHTTPParser-0.2.0\/",
+    "EB3A58D245911351A063DF08C170DE3415B65824" : "AMCPodcastScraper\/Xcode\/Zewo\/HTTPClient\/",
+    "F1BC52561A710CF215ADD0AA3A71C2520A285287" : "AMCPodcastScraper\/Xcode\/Zewo\/Data\/",
+    "D4199CF4A45E212E54A4CEE7E34326E0BC446862" : "AMCPodcastScraper\/Xcode\/Zewo\/HTTP\/",
+    "901D39F10963DCBC990E02C949E08901C0DDB8E3" : "AMCPodcastScraper\/Packages\/InterchangeData-0.2.1\/",
+    "8951CEB15DDB2D711276960E67900B8AA34FF427" : "AMCPodcastScraper\/Packages\/MediaType-0.3.0\/",
+    "15033DFF73D1DAA84A806DC9B6994613D8A2EB4F" : "AMCPodcastScraper\/Packages\/IP-0.2.1\/",
+    "EEB4909D83F96F5BD9469CDDE9596289619DBE1F" : "AMCPodcastScraper\/Packages\/CURIParser-0.2.0\/",
+    "10A2CB6C4392F0E306FF8D509BE5E88232276EA4" : "AMCPodcastScraper\/Packages\/String-0.2.6\/",
+    "908FC933CA96C901B9EB7FCA1AC9BEABA3C7F49F" : "AMCPodcastScraper\/Xcode\/Zewo\/TCP\/",
+    "900D198C3FB851E8F8E01B008846A319DD357A70" : "AMCPodcastScraper\/Xcode\/Zewo\/Venice\/",
+    "704B817219E4CBC31AA92368EF54A4E2835A8C3D" : "AMCPodcastScraper\/Packages\/System-0.2.0\/",
+    "1D5E3FB3EB19F2DAF5FDEE97CBD5C55259A1CEC1" : "AMCPodcastScraper\/Xcode\/Zewo\/CLibvenice\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "AMCPodcastScraper",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AMCPodcastScraper.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Xcode\/AMCPodcastScraper\/AMCPodcastScraper.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/String.git",
@@ -60,11 +56,6 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/CHTTPParser.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "269ADF55FAAC04D68303BE30B6BD693E717155DE"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/URI.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "66FB12B2039D50DE5AF09A44F1172B3A2880CFB8"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/System.git",
@@ -110,11 +101,6 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/Data.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F1BC52561A710CF215ADD0AA3A71C2520A285287"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/Stream.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FDC1EEAE5EDAF5D3F4A6BADD7FDD7A4BD908DED9"
     }
   ]
 }

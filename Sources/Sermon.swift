@@ -17,14 +17,10 @@ class Sermon {
 	let speakerName: String
 	let title: String
 	
-	init?(html: String) {
-		if let maybeFileUrl = exractFileUrlFrom(html) {
-			fileUrl = maybeFileUrl
-		} else {
-			return nil
-		}
+	init(html: String) {
 		date = extractDateFrom(html) ?? "January 1, 1970"
 		description = extractDescFrom(html) ?? ""
+		fileUrl = exractFileUrlFrom(html) ?? ""
 		imgUrl = extractImgUrlFrom(html) ?? ""
 		speakerName = extractSpeakerNameFrom(html) ?? "[Anonymous]"
 		title = extractTitleFrom(html) ?? "[Untitled]"

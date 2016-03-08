@@ -11,6 +11,7 @@
 		E38DC37D1C8A75FD00D4990D /* SermonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37C1C8A75FD00D4990D /* SermonPage.swift */; };
 		E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37E1C8DF97900D4990D /* Sermon.swift */; };
 		E38DC3811C8E191D00D4990D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC3801C8E191D00D4990D /* String.swift */; };
+		E38DC3831C8E460A00D4990D /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC3821C8E460A00D4990D /* Pager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E38DC37C1C8A75FD00D4990D /* SermonPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SermonPage.swift; path = ../../Sources/SermonPage.swift; sourceTree = "<group>"; };
 		E38DC37E1C8DF97900D4990D /* Sermon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sermon.swift; path = ../../Sources/Sermon.swift; sourceTree = "<group>"; };
 		E38DC3801C8E191D00D4990D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../Sources/String.swift; sourceTree = "<group>"; };
+		E38DC3821C8E460A00D4990D /* Pager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pager.swift; path = ../../Sources/Pager.swift; sourceTree = "<group>"; };
 		E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTTPClient.xcodeproj; path = ../Zewo/HTTPClient/XcodeDevelopment/HTTPClient.xcodeproj; sourceTree = "<group>"; };
 		E3FBFD231C88CED8008BA935 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Packages; path = ../../Packages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				E309162D1C88A354002D378F /* AMCPodcastScraperTests */,
 				E30916211C88A354002D378F /* Products */,
 				E30916631C88B13D002D378F /* main.swift */,
+				E38DC3821C8E460A00D4990D /* Pager.swift */,
 				E38DC37C1C8A75FD00D4990D /* SermonPage.swift */,
 				E38DC37E1C8DF97900D4990D /* Sermon.swift */,
 				E38DC3801C8E191D00D4990D /* String.swift */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30916641C88B13D002D378F /* main.swift in Sources */,
+				E38DC3831C8E460A00D4990D /* Pager.swift in Sources */,
 				E38DC37D1C8A75FD00D4990D /* SermonPage.swift in Sources */,
 				E38DC3811C8E191D00D4990D /* String.swift in Sources */,
 				E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */,
