@@ -7,10 +7,12 @@
 //
 
 import HTTPClient
+import JSON
 
 let client = try Client(host: "www.albanymennonite.org", port: 80)
 let pager = Pager(client: client, firstPagePath: "/sermons.html")
 
+var sermons = [[String:String]]()
 for pagerReturn in pager {
 	let page: SermonPage
 	
@@ -27,16 +29,17 @@ for pagerReturn in pager {
 			print("Incomplete sermon: \(sermon)")
     	continue
   	}
-  	print("###")
-  	print(sermon.title)
-  	print(sermon.date)
-  	print(sermon.speakerName)
-  	print(sermon.description)
-  	print(sermon.imgUrl)
-  	print(sermon.fileUrl)
-  	print("###")
+		sermons.append([
+			"title": sermon.title,
+			"date":  sermon.date,
+			"description": sermon.description,
+			"imgUrl": sermon.imgUrl,
+			"fileUrl": sermon.fileUrl
+		])
   }
 }
+
+print(JSON.from(sermons.map({ JSON.from($0.mapValues(JSON.from)) })))
 
 // @todo: Us NSTimer (?) to check every so often
 // @see http://stackoverflow.com/questions/24007650/selector-in-swift

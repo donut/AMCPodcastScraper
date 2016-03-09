@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E30916641C88B13D002D378F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30916631C88B13D002D378F /* main.swift */; };
+		E33F8EBC1C90AF9D000859FE /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F8EBB1C90AF9D000859FE /* Dictionary.swift */; };
 		E38DC37D1C8A75FD00D4990D /* SermonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37C1C8A75FD00D4990D /* SermonPage.swift */; };
 		E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37E1C8DF97900D4990D /* Sermon.swift */; };
 		E38DC3811C8E191D00D4990D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC3801C8E191D00D4990D /* String.swift */; };
@@ -21,6 +22,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = E309161F1C88A354002D378F;
 			remoteInfo = AMCPodcastScraper;
+		};
+		E33F8EB51C9088C1000859FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C11BB35F435A56D851D7FAFE;
+			remoteInfo = JSON;
+		};
+		E33F8EB71C9088C1000859FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3A9CDA739A1E9AE2D2B2E08;
+			remoteInfo = "JSON-Test";
+		};
+		E33F8EB91C909ECA000859FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E0AA8C839DE22E52BE44F43;
+			remoteInfo = JSON;
 		};
 		E3FBFD041C88CA54008BA935 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -53,6 +75,8 @@
 		E30916381C88A3AA002D378F /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = ../../Sources; sourceTree = "<group>"; };
 		E309163A1C88A817002D378F /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../Package.swift; sourceTree = "<group>"; };
 		E30916631C88B13D002D378F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../main.swift; sourceTree = "<group>"; };
+		E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = ../Zewo/JSON/XcodeDevelopment/JSON.xcodeproj; sourceTree = "<group>"; };
+		E33F8EBB1C90AF9D000859FE /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = ../../Sources/Dictionary.swift; sourceTree = "<group>"; };
 		E38DC37C1C8A75FD00D4990D /* SermonPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SermonPage.swift; path = ../../Sources/SermonPage.swift; sourceTree = "<group>"; };
 		E38DC37E1C8DF97900D4990D /* Sermon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sermon.swift; path = ../../Sources/Sermon.swift; sourceTree = "<group>"; };
 		E38DC3801C8E191D00D4990D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../Sources/String.swift; sourceTree = "<group>"; };
@@ -87,6 +111,7 @@
 				E309162D1C88A354002D378F /* AMCPodcastScraperTests */,
 				E30916211C88A354002D378F /* Products */,
 				E30916631C88B13D002D378F /* main.swift */,
+				E33F8EBB1C90AF9D000859FE /* Dictionary.swift */,
 				E38DC3821C8E460A00D4990D /* Pager.swift */,
 				E38DC37C1C8A75FD00D4990D /* SermonPage.swift */,
 				E38DC37E1C8DF97900D4990D /* Sermon.swift */,
@@ -125,9 +150,19 @@
 		E309163C1C88A9A2002D378F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */,
 				E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */,
 			);
 			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		E33F8EAF1C9088C1000859FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E33F8EB61C9088C1000859FE /* JSON.framework */,
+				E33F8EB81C9088C1000859FE /* JSON-Test.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E3FBFCE71C88CA53008BA935 /* Products */ = {
@@ -152,6 +187,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E33F8EBA1C909ECA000859FE /* PBXTargetDependency */,
 				E3FBFD221C88CA5F008BA935 /* PBXTargetDependency */,
 			);
 			name = AMCPodcastScraper;
@@ -211,6 +247,10 @@
 					ProductGroup = E3FBFCE71C88CA53008BA935 /* Products */;
 					ProjectRef = E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */;
 				},
+				{
+					ProductGroup = E33F8EAF1C9088C1000859FE /* Products */;
+					ProjectRef = E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -221,6 +261,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		E33F8EB61C9088C1000859FE /* JSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSON.framework;
+			remoteRef = E33F8EB51C9088C1000859FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E33F8EB81C9088C1000859FE /* JSON-Test.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JSON-Test.xctest";
+			remoteRef = E33F8EB71C9088C1000859FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		E3FBFD051C88CA54008BA935 /* HTTPClient.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -257,6 +311,7 @@
 				E38DC37D1C8A75FD00D4990D /* SermonPage.swift in Sources */,
 				E38DC3811C8E191D00D4990D /* String.swift in Sources */,
 				E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */,
+				E33F8EBC1C90AF9D000859FE /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = E309161F1C88A354002D378F /* AMCPodcastScraper */;
 			targetProxy = E309162B1C88A354002D378F /* PBXContainerItemProxy */;
+		};
+		E33F8EBA1C909ECA000859FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSON;
+			targetProxy = E33F8EB91C909ECA000859FE /* PBXContainerItemProxy */;
 		};
 		E3FBFD221C88CA5F008BA935 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
