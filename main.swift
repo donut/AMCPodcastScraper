@@ -6,6 +6,8 @@
 //  Copyright © 2016 Donovan Mueller. All rights reserved.
 //
 
+import File
+import Foundation
 import HTTPClient
 import JSON
 
@@ -39,7 +41,23 @@ for pagerReturn in pager {
   }
 }
 
-print(JSON.from(sermons.map({ JSON.from($0.mapValues(JSON.from)) })))
+let sermonsInJson = JSON.from(sermons.map({ JSON.from($0.valuesMap(JSON.from)) }))
+debugPrint(sermonsInJson)
+
+let dateComponents: NSCalendarUnit = [
+	.Year, .Month, .Day, .Hour, .Minute, .Second
+]
+let now = NSCalendar.currentCalendar()
+	.components(dateComponents, fromDate: NSDate())
+let filename = String(format: "feed.%04d-%02d-%02d@%02d-%02d.json",
+                      now.year, now.month, now.day, now.hour, now.minute)
+debugPrint(filename)
+
+var file = try File(path: filename, mode: .CreateWrite)
+try file.write(Data(String(sermonsInJson)))
+file.close()
+debugPrint(try File.workingDirectory())
+
 
 // @todo: Us NSTimer (?) to check every so often
 // @see http://stackoverflow.com/questions/24007650/selector-in-swift

@@ -10,7 +10,7 @@ import Foundation
 
 extension Dictionary {
 	
-	func mapValues<T>(transform: Value->T) -> Dictionary<Key,T> {
+	func valuesMap<T>(transform: Value->T) -> Dictionary<Key,T> {
 		// Adapted from http://stackoverflow.com/a/29460871/134014
 		var dict = [Key:T]()
 		for (key, value) in zip(self.keys, self.values.map(transform)) {

@@ -44,6 +44,27 @@
 			remoteGlobalIDString = 1E0AA8C839DE22E52BE44F43;
 			remoteInfo = JSON;
 		};
+		E33F8EC61C90E4A4000859FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33F8EBD1C90E4A4000859FE /* File.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C9CE9A2E1B0FD8F32B7AB10;
+			remoteInfo = File;
+		};
+		E33F8EC81C90E4A4000859FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33F8EBD1C90E4A4000859FE /* File.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFE93C2804621740BDC3A87F;
+			remoteInfo = "File-Test";
+		};
+		E33F8ECA1C90E4C2000859FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33F8EBD1C90E4A4000859FE /* File.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CDA343083B2F241D2F42FA5;
+			remoteInfo = File;
+		};
 		E3FBFD041C88CA54008BA935 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */;
@@ -77,6 +98,7 @@
 		E30916631C88B13D002D378F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../main.swift; sourceTree = "<group>"; };
 		E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = ../Zewo/JSON/XcodeDevelopment/JSON.xcodeproj; sourceTree = "<group>"; };
 		E33F8EBB1C90AF9D000859FE /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = ../../Sources/Dictionary.swift; sourceTree = "<group>"; };
+		E33F8EBD1C90E4A4000859FE /* File.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = File.xcodeproj; path = ../Zewo/File/XcodeDevelopment/File.xcodeproj; sourceTree = "<group>"; };
 		E38DC37C1C8A75FD00D4990D /* SermonPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SermonPage.swift; path = ../../Sources/SermonPage.swift; sourceTree = "<group>"; };
 		E38DC37E1C8DF97900D4990D /* Sermon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sermon.swift; path = ../../Sources/Sermon.swift; sourceTree = "<group>"; };
 		E38DC3801C8E191D00D4990D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../Sources/String.swift; sourceTree = "<group>"; };
@@ -150,8 +172,9 @@
 		E309163C1C88A9A2002D378F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */,
+				E33F8EBD1C90E4A4000859FE /* File.xcodeproj */,
 				E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */,
+				E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
@@ -161,6 +184,15 @@
 			children = (
 				E33F8EB61C9088C1000859FE /* JSON.framework */,
 				E33F8EB81C9088C1000859FE /* JSON-Test.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E33F8EBE1C90E4A4000859FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E33F8EC71C90E4A4000859FE /* File.framework */,
+				E33F8EC91C90E4A4000859FE /* File-Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +219,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E33F8ECB1C90E4C2000859FE /* PBXTargetDependency */,
 				E33F8EBA1C909ECA000859FE /* PBXTargetDependency */,
 				E3FBFD221C88CA5F008BA935 /* PBXTargetDependency */,
 			);
@@ -244,6 +277,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = E33F8EBE1C90E4A4000859FE /* Products */;
+					ProjectRef = E33F8EBD1C90E4A4000859FE /* File.xcodeproj */;
+				},
+				{
 					ProductGroup = E3FBFCE71C88CA53008BA935 /* Products */;
 					ProjectRef = E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */;
 				},
@@ -273,6 +310,20 @@
 			fileType = wrapper.cfbundle;
 			path = "JSON-Test.xctest";
 			remoteRef = E33F8EB71C9088C1000859FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E33F8EC71C90E4A4000859FE /* File.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = File.framework;
+			remoteRef = E33F8EC61C90E4A4000859FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E33F8EC91C90E4A4000859FE /* File-Test.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "File-Test.xctest";
+			remoteRef = E33F8EC81C90E4A4000859FE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		E3FBFD051C88CA54008BA935 /* HTTPClient.framework */ = {
@@ -334,6 +385,11 @@
 			isa = PBXTargetDependency;
 			name = JSON;
 			targetProxy = E33F8EB91C909ECA000859FE /* PBXContainerItemProxy */;
+		};
+		E33F8ECB1C90E4C2000859FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = File;
+			targetProxy = E33F8ECA1C90E4C2000859FE /* PBXContainerItemProxy */;
 		};
 		E3FBFD221C88CA5F008BA935 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
