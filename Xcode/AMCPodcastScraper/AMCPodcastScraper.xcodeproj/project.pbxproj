@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E30916641C88B13D002D378F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30916631C88B13D002D378F /* main.swift */; };
 		E33F8EBC1C90AF9D000859FE /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F8EBB1C90AF9D000859FE /* Dictionary.swift */; };
 		E38DC37D1C8A75FD00D4990D /* SermonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37C1C8A75FD00D4990D /* SermonPage.swift */; };
 		E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37E1C8DF97900D4990D /* Sermon.swift */; };
 		E38DC3811C8E191D00D4990D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC3801C8E191D00D4990D /* String.swift */; };
 		E38DC3831C8E460A00D4990D /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC3821C8E460A00D4990D /* Pager.swift */; };
+		E3E4F8001C922335006A902E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4F7FF1C922335006A902E /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +95,6 @@
 		E309162E1C88A354002D378F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E30916381C88A3AA002D378F /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = ../../Sources; sourceTree = "<group>"; };
 		E309163A1C88A817002D378F /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../Package.swift; sourceTree = "<group>"; };
-		E30916631C88B13D002D378F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../main.swift; sourceTree = "<group>"; };
 		E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = ../Zewo/JSON/XcodeDevelopment/JSON.xcodeproj; sourceTree = "<group>"; };
 		E33F8EBB1C90AF9D000859FE /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = ../../Sources/Dictionary.swift; sourceTree = "<group>"; };
 		E33F8EBD1C90E4A4000859FE /* File.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = File.xcodeproj; path = ../Zewo/File/XcodeDevelopment/File.xcodeproj; sourceTree = "<group>"; };
@@ -103,6 +102,7 @@
 		E38DC37E1C8DF97900D4990D /* Sermon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sermon.swift; path = ../../Sources/Sermon.swift; sourceTree = "<group>"; };
 		E38DC3801C8E191D00D4990D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../Sources/String.swift; sourceTree = "<group>"; };
 		E38DC3821C8E460A00D4990D /* Pager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pager.swift; path = ../../Sources/Pager.swift; sourceTree = "<group>"; };
+		E3E4F7FF1C922335006A902E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../Sources/main.swift; sourceTree = "<group>"; };
 		E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTTPClient.xcodeproj; path = ../Zewo/HTTPClient/XcodeDevelopment/HTTPClient.xcodeproj; sourceTree = "<group>"; };
 		E3FBFD231C88CED8008BA935 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Packages; path = ../../Packages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,12 +132,7 @@
 				E30916221C88A354002D378F /* AMCPodcastScraper */,
 				E309162D1C88A354002D378F /* AMCPodcastScraperTests */,
 				E30916211C88A354002D378F /* Products */,
-				E30916631C88B13D002D378F /* main.swift */,
-				E33F8EBB1C90AF9D000859FE /* Dictionary.swift */,
-				E38DC3821C8E460A00D4990D /* Pager.swift */,
-				E38DC37C1C8A75FD00D4990D /* SermonPage.swift */,
-				E38DC37E1C8DF97900D4990D /* Sermon.swift */,
-				E38DC3801C8E191D00D4990D /* String.swift */,
+				E3E4F8011C9224E3006A902E /* Added */,
 				E309163A1C88A817002D378F /* Package.swift */,
 				E3FBFD231C88CED8008BA935 /* Packages */,
 				E30916381C88A3AA002D378F /* Sources */,
@@ -195,6 +190,19 @@
 				E33F8EC91C90E4A4000859FE /* File-Test.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E3E4F8011C9224E3006A902E /* Added */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4F7FF1C922335006A902E /* main.swift */,
+				E33F8EBB1C90AF9D000859FE /* Dictionary.swift */,
+				E38DC3821C8E460A00D4990D /* Pager.swift */,
+				E38DC37C1C8A75FD00D4990D /* SermonPage.swift */,
+				E38DC37E1C8DF97900D4990D /* Sermon.swift */,
+				E38DC3801C8E191D00D4990D /* String.swift */,
+			);
+			name = Added;
 			sourceTree = "<group>";
 		};
 		E3FBFCE71C88CA53008BA935 /* Products */ = {
@@ -357,9 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E30916641C88B13D002D378F /* main.swift in Sources */,
 				E38DC3831C8E460A00D4990D /* Pager.swift in Sources */,
 				E38DC37D1C8A75FD00D4990D /* SermonPage.swift in Sources */,
+				E3E4F8001C922335006A902E /* main.swift in Sources */,
 				E38DC3811C8E191D00D4990D /* String.swift in Sources */,
 				E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */,
 				E33F8EBC1C90AF9D000859FE /* Dictionary.swift in Sources */,
