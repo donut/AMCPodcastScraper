@@ -54,7 +54,7 @@ let filename: String
 let maybeNow: NSDateComponents? =
 	NSCalendar.currentCalendar().components(dateComponents, fromDate: NSDate())
 if let now = maybeNow {
-	// String(format:) is not yet implemented on Linux, but this works.
+	// String(format:) is not yet implemented on Linux, but NSString(format:) is.
   filename = String(NSString(
 		format: "feed.%04d-%02d-%02d@%02d-%02d.json",
     now.year, now.month, now.day, now.hour, now.minute))

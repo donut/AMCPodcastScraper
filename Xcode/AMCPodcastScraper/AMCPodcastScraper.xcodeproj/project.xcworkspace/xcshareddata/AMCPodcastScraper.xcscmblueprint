@@ -1,4 +1,5 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "12C7DE60379ADADBCCFD4DDDE0E27B218D6B2CF7",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
@@ -19,6 +20,7 @@
     "900D198C3FB851E8F8E01B008846A319DD357A70" : 0,
     "BC4F18C8C7F08249E9651E82076CAED54BEAADF7" : 0,
     "704B817219E4CBC31AA92368EF54A4E2835A8C3D" : 0,
+    "12C7DE60379ADADBCCFD4DDDE0E27B218D6B2CF7" : 0,
     "1D5E3FB3EB19F2DAF5FDEE97CBD5C55259A1CEC1" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "67D93E0E-748C-4B01-8474-A280F6FEE3D3",
@@ -39,6 +41,7 @@
     "900D198C3FB851E8F8E01B008846A319DD357A70" : "AMCPodcastScraper\/Xcode\/Zewo\/Venice\/",
     "BC4F18C8C7F08249E9651E82076CAED54BEAADF7" : "AMCPodcastScraper\/Xcode\/Zewo\/JSON\/",
     "704B817219E4CBC31AA92368EF54A4E2835A8C3D" : "AMCPodcastScraper\/Packages\/System-0.2.0\/",
+    "12C7DE60379ADADBCCFD4DDDE0E27B218D6B2CF7" : "AMCPodcastScraper\/",
     "1D5E3FB3EB19F2DAF5FDEE97CBD5C55259A1CEC1" : "AMCPodcastScraper\/Xcode\/Zewo\/CLibvenice\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "AMCPodcastScraper",
@@ -49,6 +52,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/String.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "10A2CB6C4392F0E306FF8D509BE5E88232276EA4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:donut\/AMCPodcastScraper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12C7DE60379ADADBCCFD4DDDE0E27B218D6B2CF7"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Zewo\/IP.git",
