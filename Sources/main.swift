@@ -47,10 +47,20 @@ debugPrint(sermonsInJson)
 let dateComponents: NSCalendarUnit = [
 	.Year, .Month, .Day, .Hour, .Minute, .Second
 ]
-let now = NSCalendar.currentCalendar()
-	.components(dateComponents, fromDate: NSDate())
-let filename = String(format: "feed.%04d-%02d-%02d@%02d-%02d.json",
-                      now.year, now.month, now.day, now.hour, now.minute)
+
+let filename: String
+// On Linux, this line returns an optional, but within Xcode it's not an
+// optional. Don't know what that's about.
+let maybeNow: NSDateComponents? =
+	NSCalendar.currentCalendar().components(dateComponents, fromDate: NSDate())
+if let now = maybeNow {
+	// String(format:) is not yet implemented on Linux, but this works.
+  filename = String(NSString(
+		format: "feed.%04d-%02d-%02d@%02d-%02d.json",
+    now.year, now.month, now.day, now.hour, now.minute))
+} else {
+	filename = "feed.unknown_date.json"
+}
 debugPrint(filename)
 
 var file = try File(path: filename, mode: .CreateWrite)
