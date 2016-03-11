@@ -98,10 +98,12 @@
 		E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = ../Zewo/JSON/XcodeDevelopment/JSON.xcodeproj; sourceTree = "<group>"; };
 		E33F8EBB1C90AF9D000859FE /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = ../../Sources/Dictionary.swift; sourceTree = "<group>"; };
 		E33F8EBD1C90E4A4000859FE /* File.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = File.xcodeproj; path = ../Zewo/File/XcodeDevelopment/File.xcodeproj; sourceTree = "<group>"; };
+		E366D0191C935F6D00CDC7DB /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; name = ".swift-version"; path = "../../.swift-version"; sourceTree = "<group>"; };
 		E38DC37C1C8A75FD00D4990D /* SermonPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SermonPage.swift; path = ../../Sources/SermonPage.swift; sourceTree = "<group>"; };
 		E38DC37E1C8DF97900D4990D /* Sermon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sermon.swift; path = ../../Sources/Sermon.swift; sourceTree = "<group>"; };
 		E38DC3801C8E191D00D4990D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../Sources/String.swift; sourceTree = "<group>"; };
 		E38DC3821C8E460A00D4990D /* Pager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pager.swift; path = ../../Sources/Pager.swift; sourceTree = "<group>"; };
+		E3BCDBF01C935A7B00167788 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../../.gitignore; sourceTree = "<group>"; };
 		E3E4F7FF1C922335006A902E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../Sources/main.swift; sourceTree = "<group>"; };
 		E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HTTPClient.xcodeproj; path = ../Zewo/HTTPClient/XcodeDevelopment/HTTPClient.xcodeproj; sourceTree = "<group>"; };
 		E3FBFD231C88CED8008BA935 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Packages; path = ../../Packages; sourceTree = "<group>"; };
@@ -128,14 +130,13 @@
 		E30916181C88A354002D378F = {
 			isa = PBXGroup;
 			children = (
-				E309163C1C88A9A2002D378F /* Dependencies */,
-				E30916221C88A354002D378F /* AMCPodcastScraper */,
-				E309162D1C88A354002D378F /* AMCPodcastScraperTests */,
-				E30916211C88A354002D378F /* Products */,
-				E3E4F8011C9224E3006A902E /* Added */,
 				E309163A1C88A817002D378F /* Package.swift */,
-				E3FBFD231C88CED8008BA935 /* Packages */,
+				E3BCDBF01C935A7B00167788 /* .gitignore */,
+				E366D0191C935F6D00CDC7DB /* .swift-version */,
 				E30916381C88A3AA002D378F /* Sources */,
+				E3FBFD231C88CED8008BA935 /* Packages */,
+				E3E4F8011C9224E3006A902E /* Added */,
+				E3BCDBC31C93598E00167788 /* Xcode */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,16 +165,6 @@
 			path = AMCPodcastScraperTests;
 			sourceTree = "<group>";
 		};
-		E309163C1C88A9A2002D378F /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				E33F8EBD1C90E4A4000859FE /* File.xcodeproj */,
-				E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */,
-				E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
 		E33F8EAF1C9088C1000859FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +181,19 @@
 				E33F8EC91C90E4A4000859FE /* File-Test.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E3BCDBC31C93598E00167788 /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				E33F8EBD1C90E4A4000859FE /* File.xcodeproj */,
+				E3FBFCE61C88CA53008BA935 /* HTTPClient.xcodeproj */,
+				E33F8EAE1C9088C1000859FE /* JSON.xcodeproj */,
+				E30916221C88A354002D378F /* AMCPodcastScraper */,
+				E309162D1C88A354002D378F /* AMCPodcastScraperTests */,
+				E30916211C88A354002D378F /* Products */,
+			);
+			name = Xcode;
 			sourceTree = "<group>";
 		};
 		E3E4F8011C9224E3006A902E /* Added */ = {
