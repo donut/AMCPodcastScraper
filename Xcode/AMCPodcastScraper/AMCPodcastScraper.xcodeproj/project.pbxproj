@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E33F8EBC1C90AF9D000859FE /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33F8EBB1C90AF9D000859FE /* Dictionary.swift */; };
+		E366D01E1C93679500CDC7DB /* scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366D01D1C93679500CDC7DB /* scraper.swift */; };
 		E38DC37D1C8A75FD00D4990D /* SermonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37C1C8A75FD00D4990D /* SermonPage.swift */; };
 		E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC37E1C8DF97900D4990D /* Sermon.swift */; };
 		E38DC3811C8E191D00D4990D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DC3801C8E191D00D4990D /* String.swift */; };
@@ -99,6 +100,7 @@
 		E33F8EBB1C90AF9D000859FE /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = ../../Sources/Dictionary.swift; sourceTree = "<group>"; };
 		E33F8EBD1C90E4A4000859FE /* File.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = File.xcodeproj; path = ../Zewo/File/XcodeDevelopment/File.xcodeproj; sourceTree = "<group>"; };
 		E366D0191C935F6D00CDC7DB /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; name = ".swift-version"; path = "../../.swift-version"; sourceTree = "<group>"; };
+		E366D01D1C93679500CDC7DB /* scraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = scraper.swift; path = ../../Sources/scraper.swift; sourceTree = "<group>"; };
 		E38DC37C1C8A75FD00D4990D /* SermonPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SermonPage.swift; path = ../../Sources/SermonPage.swift; sourceTree = "<group>"; };
 		E38DC37E1C8DF97900D4990D /* Sermon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sermon.swift; path = ../../Sources/Sermon.swift; sourceTree = "<group>"; };
 		E38DC3801C8E191D00D4990D /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../Sources/String.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		E3E4F8011C9224E3006A902E /* Added */ = {
 			isa = PBXGroup;
 			children = (
+				E366D01D1C93679500CDC7DB /* scraper.swift */,
 				E3E4F7FF1C922335006A902E /* main.swift */,
 				E33F8EBB1C90AF9D000859FE /* Dictionary.swift */,
 				E38DC3821C8E460A00D4990D /* Pager.swift */,
@@ -375,6 +378,7 @@
 				E38DC3811C8E191D00D4990D /* String.swift in Sources */,
 				E38DC37F1C8DF97900D4990D /* Sermon.swift in Sources */,
 				E33F8EBC1C90AF9D000859FE /* Dictionary.swift in Sources */,
+				E366D01E1C93679500CDC7DB /* scraper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

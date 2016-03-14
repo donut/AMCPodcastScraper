@@ -43,20 +43,18 @@ class Pager : SequenceType {
 			do {
   			response = try self.httpClient.get(nextPagePath)
 			} catch {
-				return .Failure(message: "Failed retrieving page",
-											  path: nextPagePath, error: error)
+				return .Failure(.DownloadFailure(path: nextPagePath, error: error))
 			}
 			guard let body = response.body.buffer else {
-				return .Failure(message: "Page body empty",
-                  				path: nextPagePath, error: nil)
+				return .Failure(.EmptyResponseBody(path: nextPagePath))
 			}
 			let html: String
 			do {
 				html = try String(data: body)
 			} catch {
-				return .Failure(
+				return .Failure(.Other(
 					message: "Failed converting body data to string",
-					path: nextPagePath, error: error)
+					path: nextPagePath, error: error))
 			}
 			
 			let nextPagePathRange = html.rangeOfString(
@@ -76,5 +74,12 @@ class Pager : SequenceType {
 enum PagerReturn {
 	// Since generators can't throw errors, this is the next best thing.
 	case Success(SermonPage)
-	case Failure(message: String, path: String, error: ErrorType?)
+	case Failure(PagerError)
+}
+
+
+enum PagerError : ErrorType {
+	case DownloadFailure(path: String, error: ErrorType)
+	case EmptyResponseBody(path: String)
+	case Other(message: String, path: String, error: ErrorType)
 }
