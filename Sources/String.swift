@@ -10,6 +10,19 @@ import Foundation
 
 extension String {
 	
+	/// Immutable version of `String.replaceRange()`
+	///
+	/// - parameters:
+	///		- range: The range within `self` to replace.
+	///		- with: What to replace the range with.
+	/// - returns:
+	///		The new string with the range replaced.
+	func replaced(range: Range<Index>, with: String) -> String {
+		var new = self
+		new.replaceRange(range, with: with)
+		return new
+	}
+	
 	/// Immutable version of `String.replace()`
 	///
 	/// - parameters:
@@ -33,9 +46,7 @@ extension String {
 			"\\s{2,}|[\t\n\r]{1,}", options: .RegularExpressionSearch)
 		
 		if let whiteSpaceRange = maybeWhiteSpaceRange {
-			var new = self
-			new.replaceRange(whiteSpaceRange, with: " ")
-			return new.reducedWhiteSpace()
+			return replaced(whiteSpaceRange, with: " ").reducedWhiteSpace()
 		}
 		
 		return self
@@ -47,9 +58,7 @@ extension String {
 			"<[^>]*>", options: .RegularExpressionSearch)
 		
 		if let tagRange = maybeTagRange {
-			var new = self
-			new.replaceRange(tagRange, with: "")
-			return new.strippedHTMLTags()
+			return replaced(tagRange, with: "").strippedHTMLTags()
 		}
 		
 		return self
