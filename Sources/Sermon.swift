@@ -59,18 +59,12 @@ private func extractSpeakerNameFrom(html: String) -> String? {
 }
 
 private func extractTitleFrom(html: String) -> String? {
-	let maybeTitle = extract("<h3[^>]*>.+</h3>", from: html)
-	if maybeTitle == nil {
-		return nil
-	}
-	var title = maybeTitle!
-	
-	title.replace("<br>", with: " ")
-	title.replace("<p>", with: " ")
-	title.replace("</p>", with: " ")
-	title.reduceWhiteSpace()
-	title.stripHtmlTags()
-	title.trim()
-	
-	return title
+	let title = extract("<h3[^>]*>.+</h3>", from: html)
+	return title?
+		.replacedAll("<br>", with: " ")
+		.replacedAll("<p>", with: " ")
+		.replacedAll("</p>", with: " ")
+		.reducedWhiteSpace()
+		.strippedHTMLTags()
+		.trim()
 }
