@@ -41,7 +41,7 @@ func doIt() {
   	]}
 	
 	let sermonsInJSON = JSON.from(sermons.map({ JSON.from($0.valuesMap(JSON.from)) }))
-//	let filePath = try genFilePath("dumps")
+  //	let filePath = try genFilePath("dumps")
 	let filePath = "files.json"
 	let exists = File.fileExistsAt(filePath)
 	if exists.fileExists && !exists.isDirectory {
@@ -65,10 +65,7 @@ func doIt() {
 	}
 }
 
-
-doIt()
-
-// @todo: Us NSTimer (?) to check every so often
-// @see http://stackoverflow.com/questions/24007650/selector-in-swift
-//   for Selector alternative
-
+while true {
+	doIt()
+	sleep(60 * 60 * 4)
+}
