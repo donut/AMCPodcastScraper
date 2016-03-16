@@ -13,7 +13,7 @@ extension String {
 	mutating func reduceWhiteSpace() {
 		// Reduces white space down to single spaces.
 		let maybeWhiteSpaceRange = self.rangeOfString(
-			"\\s{2,}", options: .RegularExpressionSearch)
+			"\\s{2,}|[\t\n\r]{1,}", options: .RegularExpressionSearch)
 		
 		if let whiteSpaceRange = maybeWhiteSpaceRange {
 			self.replaceRange(whiteSpaceRange, with: " ")
