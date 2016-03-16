@@ -22,15 +22,12 @@ class Pager : SequenceType {
 	}
 	
 	func generate() -> AnyGenerator<PagerReturn> {
-		var index = 0
+		var index = -1
 		
 		return AnyGenerator {
+			index += 1
 			if self.nextPagePath == nil {
-				if index < self.pages.count {
-					index += 1
-					return .Success(self.pages[index-1])
-				}
-				return nil
+				return index < self.pages.count ? .Success(self.pages[index]) : nil
 			}
 			
 			var nextPagePath = self.nextPagePath!
