@@ -13,6 +13,7 @@ import JSON
 
 
 func doIt() {
+	print("Retreiving list of pages... (\(NSDate()))")
 	let pages: [SermonPage]
 	do {
   	pages = try getPages("www.albanymennonite.org", path: "/sermons.html")
@@ -30,6 +31,8 @@ func doIt() {
 		return
 	}
 	
+	print("--> \(pages.count) page(s) found.")
+	
 	let sermons = pages.reduce([], combine: +)
 		.filter({ $0.fileUrl.characters.count > 0 })
 		.map {[
@@ -39,6 +42,8 @@ func doIt() {
 			"imgUrl": $0.imgUrl,
 			"fileUrl": $0.fileUrl
   	]}
+	
+	print("--> Extract \(sermons.count) sermon(s).")
 	
 	let sermonsInJSON = JSON.from(sermons.map({ JSON.from($0.valuesMap(JSON.from)) }))
   //	let filePath = try genFilePath("dumps")
@@ -59,6 +64,7 @@ func doIt() {
 	}
 	do {
   	try save(sermonsInJSON, to: filePath)
+		print("--> Saved to [\(filePath)].")
 	} catch {
 		print("Failed saving file [\(filePath)]: \(error)")
 		return
