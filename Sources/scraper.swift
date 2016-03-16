@@ -22,6 +22,7 @@ func getPages(from: String, path: String) throws -> [SermonPage] {
 }
 
 
+/// Generate the full file path with date.
 func genFilePath(prefix: String?) throws -> String {
 	let dir: String
 	if prefix == nil || prefix!.characters.count == 0
